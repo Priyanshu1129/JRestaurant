@@ -1,0 +1,53 @@
+/* importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,700&family=Poppins:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	scroll-behavior: smooth;
+}
+
+/* Tailwind CSS */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.container {
+		@apply w-[92%] lg:w-[85%]  xl:w-[75%] mx-auto;
+	}
+
+	.topIcon {
+		@apply text-primary text-[12px] 2xl:text-[14px];
+	}
+	.textNormal {
+		@apply text-[12px] 2xl:text-[14px] font-[400];
+	}
+
+	.link {
+		@apply list-none cursor-pointer hover:text-[#d9ba85] transition-all ease-in duration-[0.3s] text-[12px] 2xl:text-[14px];
+	}
+	.button {
+		@apply border-2 border-primary px-8 py-3 cursor-pointer hover:bg-primary transition-all ease-in duration-[0.3s] uppercase rounded-[50px] text-[13px]  2xl:text-[14px];
+	}
+	.icon {
+		@apply text-[28px] cursor-pointer  text-[#ffffff];
+	}
+	.listIcons {
+		@apply text-[#cda45e] mr-2 text-[20px];
+	}
+
+	.quoteIcon {
+		@apply relative text-[#cda45e] text-[26px] inline-block;
+	}
+
+	.avatar {
+		@apply w-[90px]  rounded-full object-cover border-[6px] border-[#ffffff33];
+	}
+
+	.socialIcon {
+		@apply text-[18px] hover:text-primary;
+	}
+}
