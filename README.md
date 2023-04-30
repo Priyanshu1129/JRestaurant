@@ -1,6 +1,6 @@
 # JRestaurant - Modern Resturant Website
 
-Live: 
+Live: https://j-restaurant.vercel.app/
 
 Modern Restaurant website build with React & Tailwind CSS
 
